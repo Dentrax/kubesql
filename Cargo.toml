@@ -1,9 +1,20 @@
 [package]
-name = "k8sql"
+name = "kubesql"
+description = "kubesql is an experimental tool for querying your Kubernetes API Server using SQL"
 version = "0.1.0"
-authors = ["Dentrax <furkan.turkal@trendyol.com>"]
+authors = ["Dentrax <furkan.turkal@hotmail.com>"]
+license = "MIT"
+keywords = ["kubernetes", "sql"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+sqlparser = "0.9.0"
+kube = "0.52.0"
+k8s-openapi = { version = "0.11.0", default-features = false, features = ["v1_20"] }
+tokio = { version = "1.4.0", features = ["full"] }
+anyhow = "1.0.40"
+serde_json = "1.0.64"
+clap = "2.33.3"
+prettytable-rs = "0.8.0"
