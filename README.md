@@ -81,10 +81,22 @@ WHERE pod.status.phase = 'Running' AND deployment.metadata.name = 'my-awesome-de
 | AND      | ✓     | Panic if no result found |
 | OR       | ✓     | Continue                 |
 
-## License
+# Special Thanks
+
+| Package                                                       | Author                                                  | License                                                                                      |
+| :------------------------------------------------------------ | :------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
+| [sqlparser](https://github.com/ballista-compute/sqlparser-rs) | [ballista-compute](https://github.com/ballista-compute) | [Apache License 2.0](https://github.com/ballista-compute/sqlparser-rs/blob/main/LICENSE.TXT) |
+| [kube](https://github.com/clux/kube-rs)                       | [clux](https://github.com/clux)                         | [Apache License 2.0](https://github.com/clux/kube-rs/blob/master/LICENSE)                    |
+| [prettytable](https://github.com/phsym/prettytable-rs)        | [phsym](https://github.com/phsym)                       | [MIT](https://github.com/phsym/prettytable-rs/blob/master/LICENSE.txt)                       |
+
+- Thanks to everyone who contributed these libraries and [others](https://github.com/Dentrax/kubesql/blob/master/Cargo.toml) that made this project possible.
+
+# License
 
 *kubesql* was created by Furkan 'Dentrax' Türkal
 
 The base project code is licensed under [MIT](https://opensource.org/licenses/MIT) unless otherwise specified. Please see the **[LICENSE](https://github.com/Dentrax/kubesql/blob/master/LICENSE)** file for more information.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDentrax%2Fkubesql.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDentrax%2Fkubesql?ref=badge_large)
 
 <kbd>Best Regards</kbd>
