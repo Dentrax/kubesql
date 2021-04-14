@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/Dentrax/kubesql" target="_blank"><img height="128" src="https://raw.githubusercontent.com/Dentrax/kubesql/master/.res/logo.png"></a></p>
+<p align="center"><a href="https://github.com/Dentrax/kubesql" target="_blank"><img height="128" src="https://raw.githubusercontent.com/Dentrax/kubesql/main/.res/logo.png"></a></p>
 
 <h1 align="center">kubesql</h1>
 
