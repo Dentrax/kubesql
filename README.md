@@ -19,6 +19,9 @@
 
 *kubesql*, an experimental tool for querying your Kubernetes API Server using simple and smallest SQL syntax.
 
+```bash
+$ kubesql -q "SELECT namespace FROM context WHERE pod.status.phase = 'Running'"
+```
 ![Screenshot](.res/screenshot.png)
 
 # Installation
