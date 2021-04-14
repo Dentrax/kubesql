@@ -23,6 +23,12 @@
 
 # Installation
 
+## Docker
+```bash
+$ docker pull furkanturkal/kubesql:0.1.0
+```
+
+## From Source
 ```bash
 $ cargo install --path . # local
 # - or -
@@ -30,7 +36,6 @@ $ cargo install --git https://github.com/Dentrax/kubesql # remote
 ```
 
 # Usage
-
 ```bash
 USAGE:
     kubesql [OPTIONS]
@@ -48,6 +53,11 @@ OPTIONS:
 ```bash
 $ kubesql --file ./kube.sql
 $ kubesql --query "SELECT namespace FROM context WHERE pod.status.phase = 'Running'"
+```
+
+### With Docker
+```bash
+$ docker container run -v ~/.kube/config/:/home/nonroot/.kube/config kubesql:0.1.0 --query "SELECT namespace FROM context WHERE pod.status.phase = 'Running'"
 ```
 
 # Quick Start
