@@ -39,6 +39,9 @@ $ cargo install --git https://github.com/Dentrax/kubesql # remote
 ```
 
 # Usage
+
+[![asciicast](https://asciinema.org/a/407398.svg)](https://asciinema.org/a/407398)
+
 ```bash
 USAGE:
     kubesql [OPTIONS]
